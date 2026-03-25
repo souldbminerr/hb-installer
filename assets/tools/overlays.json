@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Ultrahand",
+    "description": "Feature-rich overlay menu. Recommended frontend for Horizon OC.",
+    "checkPath": "switch/.overlays/ovlmenu.ovl",
+    "steps": [
+      {
+        "type": "direct_file",
+        "url": "https://github.com/ppkantorski/Ultrahand-Overlay/releases/latest/download/ovlmenu.ovl",
+        "dest": "switch/.overlays/ovlmenu.ovl"
+      }
+    ]
+  },
+  {
+    "name": "Sysmodules",
+    "description": "Turn sysmodules on and off",
+    "checkPath": "switch/.overlays/ovlSysmodules.ovl",
+    "steps": [
+      {
+        "type": "direct_file",
+        "url": "https://github.com/ppkantorski/ovl-sysmodules/releases/latest/download/ovlSysmodules.ovl",
+        "dest": "switch/.overlays/ovlSysmodules.ovl"
+      }
+    ]
+  },
+  {
+    "name": "FPSLocker",
+    "description": "Fps modification tool. Requires SaltyNX!",
+    "checkPath": "switch/.overlays/FPSLocker.ovl",
+    "steps": [
+      {
+        "type": "direct_file",
+        "url": "https://github.com/masagrator/FPSLocker/releases/latest/download/FPSLocker.ovl",
+        "dest": "switch/.overlays/FPSLocker.ovl"
+      }
+    ]
+  },
+  {
+    "name": "ReverseNX-RT",
+    "description": "Switch between handheld and docked mode. Requires SaltyNX!",
+    "checkPath": "switch/.overlays/ReverseNX-RT-ovl.ovl",
+    "steps": [
+      {
+        "type": "direct_file",
+        "url": "https://github.com/masagrator/ReverseNX-RT/releases/latest/download/ReverseNX-RT-ovl.ovl",
+        "dest": "switch/.overlays/ReverseNX-RT-ovl.ovl"
+      }
+    ]
+  },
+  {
+    "name": "QuickNTP",
+    "description": "Sync the system time to a NTP server",
+    "checkPath": "switch/.overlays/QuickNTP.ovl",
+    "steps": [
+      {
+        "type": "direct_file",
+        "url": "https://github.com/ppkantorski/QuickNTP/releases/latest/download/QuickNTP.ovl",
+        "dest": "switch/.overlays/QuickNTP.ovl"
+      }
+    ]
+  }
+]

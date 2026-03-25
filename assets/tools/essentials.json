@@ -1,0 +1,46 @@
+[
+  {
+    "name": "Hekate",
+    "description": "Nintendo Switch bootloader with GUI, payload launcher, and emuMMC support.",
+    "checkPath": "bootloader",
+    "steps": [
+      {
+        "type": "github_zip",
+        "owner": "CTCaer",
+        "repo": "hekate",
+        "assetMatch": "hekate_ctcaer_",
+        "extractTo": ""
+      },
+      {
+        "type": "direct_zip",
+        "url": "https://switch.hacks.guide/files/bootlogos.zip",
+        "extractTo": ""
+      },
+      {
+        "type": "direct_file",
+        "url": "https://switch.hacks.guide/files/emu/hekate_ipl.ini",
+        "dest": "bootloader/hekate_ipl.ini"
+      }
+    ]
+  },
+  {
+    "name": "Atmosphere",
+    "description": "Nintendo Switch custom firmware. Includes hbmenu and DNS block for emuMMC.",
+    "checkPath": "atmosphere",
+    "steps": [
+      {
+        "type": "github_zip",
+        "owner": "Atmosphere-NX",
+        "repo": "Atmosphere",
+        "assetMatch": "hbmenu-",
+        "assetExclude": "symbols",
+        "extractTo": ""
+      },
+      {
+        "type": "direct_file",
+        "url": "https://switch.hacks.guide/files/emummc.txt",
+        "dest": "atmosphere/hosts/emummc.txt"
+      }
+    ]
+  }
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "name": "Homebrew App Store",
+    "description": "Homebrew app store.",
+    "checkPath": "switch/appstore.nro",
+    "steps": [
+      {
+        "type": "github_file",
+        "owner": "DefenderOfHyrule",
+        "repo": "hb-appstore",
+        "assetMatch": "appstore.nro",
+        "dest": "switch/appstore.nro"
+      }
+    ]
+  },
+  {
+    "name": "JKSV",
+    "description": "Save manager. Backup, restore, and edit game saves.",
+    "checkPath": "switch/JKSV.nro",
+    "steps": [
+      {
+        "type": "github_file",
+        "owner": "J-D-K",
+        "repo": "JKSV",
+        "assetMatch": "JKSV.nro",
+        "dest": "switch/JKSV.nro"
+      }
+    ]
+  },
+  {
+    "name": "ftpd",
+    "description": "FTP server. Transfer files wirelessly over your local network.",
+    "checkPath": "switch/ftpd.nro",
+    "steps": [
+      {
+        "type": "github_file",
+        "owner": "mtheall",
+        "repo": "ftpd",
+        "assetMatch": "ftpd.nro",
+        "dest": "switch/ftpd.nro"
+      }
+    ]
+  },
+  {
+    "name": "NXThemesInstaller",
+    "description": "Install custom home menu themes from NXThemes.",
+    "checkPath": "switch/NXThemesInstaller.nro",
+    "steps": [
+      {
+        "type": "github_file",
+        "owner": "exelix11",
+        "repo": "SwitchThemeInjector",
+        "assetMatch": "NXThemesInstaller.nro",
+        "dest": "switch/NXThemesInstaller.nro"
+      }
+    ]
+  },
+  {
+    "name": "NX-Shell",
+    "description": "File manager for the Nintendo Switch.",
+    "checkPath": "switch/NX-Shell.nro",
+    "steps": [
+      {
+        "type": "github_file",
+        "owner": "joel16",
+        "repo": "NX-Shell",
+        "assetMatch": "NX-Shell.nro",
+        "dest": "switch/NX-Shell.nro"
+      }
+    ]
+  },
+  {
+    "name": "Goldleaf",
+    "description": "Package manager. Install, manage, and remove NSP/XCI titles.",
+    "checkPath": "switch/Goldleaf.nro",
+    "steps": [
+      {
+        "type": "github_file",
+        "owner": "XorTroll",
+        "repo": "Goldleaf",
+        "assetMatch": "Goldleaf.nro",
+        "dest": "switch/Goldleaf.nro"
+      }
+    ]
+  }
+]

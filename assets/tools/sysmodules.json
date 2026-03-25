@@ -1,0 +1,98 @@
+[
+  {
+    "name": "nx-ovlloader",
+    "description": "Background sysmodule that loads Tesla/Ultrahand overlays via combo button.",
+    "checkPath": "atmosphere/contents/420000000007E51A",
+    "steps": [
+      {
+        "type": "github_zip",
+        "owner": "ppkantorski",
+        "repo": "nx-ovlloader",
+        "assetMatch": ".zip",
+        "extractTo": ""
+      }
+    ]
+  },
+  {
+    "name": "sys-patch",
+    "description": "Patches nifm, es, ldr and more.",
+    "checkPath": "atmosphere/contents/420000000000000B",
+    "steps": [
+      {
+        "type": "github_zip",
+        "owner": "impeeza",
+        "repo": "sys-patch",
+        "assetMatch": ".zip",
+        "extractTo": ""
+      }
+    ]
+  },
+  {
+    "name": "sys-dock",
+    "description": "HBR2 for Switch OLED",
+    "checkPath": "atmosphere/contents/42000000000000A0",
+    "steps": [
+      {
+        "type": "github_zip",
+        "owner": "masagrator",
+        "repo": "sys-dock",
+        "assetMatch": ".zip",
+        "extractTo": ""
+      }
+    ]
+  },
+  {
+    "name": "SaltyNX",
+    "description": "Sysmodule for background code modification",
+    "checkPath": "atmosphere/contents/0000000000534C56",
+    "steps": [
+      {
+        "type": "github_zip",
+        "owner": "masagrator",
+        "repo": "SaltyNX",
+        "assetMatch": "SaltyNX.zip",
+        "extractTo": ""
+      }
+    ]
+  },
+  {
+    "name": "SysDVR",
+    "description": "Stream your switch to another device!",
+    "checkPath": "atmosphere/contents/00FF0000A53BB665",
+    "steps": [
+      {
+        "type": "github_zip",
+        "owner": "exelix11",
+        "repo": "SysDVR",
+        "assetMatch": "SysDVR.zip",
+        "extractTo": ""
+      },
+      {
+        "type": "github_zip",
+        "owner": "Hartie95",
+        "repo": "sysdvr-overlay",
+        "assetMatch": ".zip",
+        "extractTo": ""
+      }
+    ]
+  },
+  {
+    "name": "Fizeau",
+    "description": "Adjust the screen tint",
+    "checkPath": "atmosphere/contents/0100000000000F12",
+    "steps": [
+      {
+        "type": "github_zip",
+        "owner": "averne",
+        "repo": "Fizeau",
+        "assetMatch": ".zip",
+        "extractTo": ""
+      },
+      {
+        "type": "direct_file",
+        "url": "https://github.com/ppkantorski/Fizeau/releases/latest/download/Fizeau.ovl",
+        "dest": "switch/.overlays/Fizeau.ovl"
+      }
+    ]
+  }
+]

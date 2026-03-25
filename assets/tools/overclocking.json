@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Horizon OC",
+    "description": "CPU, GPU, and memory overclocking suite. Adds boot entries to hekate_ipl.ini.",
+    "checkPath": "atmosphere/kips/hoc.kip",
+    "steps": [
+      {
+        "type": "github_zip",
+        "owner": "Horizon-OC",
+        "repo": "Horizon-OC",
+        "assetMatch": "dist.zip",
+        "extractTo": ""
+      },
+      {
+        "type": "hekate_boot_entries"
+      }
+    ]
+  },
+  {
+    "name": "Furmark-NX",
+    "description": "Furmark, but for Switch.",
+    "checkPath": "switch/Furmark-NX.nro ",
+    "steps": [
+      {
+        "type": "github_file",
+        "owner": "Anxietytimmy",
+        "repo": "Furmark-NX",
+        "assetMatch": "Furmark-NX.nro ",
+        "dest": "switch/Furmark-NX.nro "
+      }
+    ]
+  },
+  {
+    "name": "MemtoolkitNX",
+    "description": "Memory testing and benchmark tool.",
+    "checkPath": "switch/MemToolkitNX.nro ",
+    "steps": [
+      {
+        "type": "github_file",
+        "owner": "souldbminerr",
+        "repo": "memtoolkitnx",
+        "assetMatch": "MemToolkitNX.nro",
+        "dest": "switch/MemToolkitNX.nro "
+      }
+    ]
+  }
+]
