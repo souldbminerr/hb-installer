@@ -58,5 +58,17 @@
         "dest": "switch/.overlays/QuickNTP.ovl"
       }
     ]
+  },
+  {
+    "name": "EdiZon",
+    "description": "Cheat Manager",
+    "checkPath": "switch/.overlays/ovlEdiZon.ovl",
+    "steps": [
+      {
+        "type": "direct_file",
+        "url": "https://github.com/proferabg/EdiZon-Overlay/releases/latest/download/ovlEdiZon.ovl",
+        "dest": "switch/.overlays/ovlEdiZon.ovl"
+      }
+    ]
   }
 ]

@@ -10,9 +10,6 @@
         "repo": "Horizon-OC",
         "assetMatch": "dist.zip",
         "extractTo": ""
-      },
-      {
-        "type": "hekate_boot_entries"
       }
     ]
   },

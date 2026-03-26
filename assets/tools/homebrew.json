@@ -82,5 +82,33 @@
         "dest": "switch/Goldleaf.nro"
       }
     ]
+  },
+  {
+    "name": "Simple Mod Manager",
+    "description": "Mod management tool",
+    "checkPath": "switch/SimpleModManager.nro",
+    "steps": [
+      {
+        "type": "github_file",
+        "owner": "DefenderOfHyrule",
+        "repo": "SimpleModManager",
+        "assetMatch": "SimpleModManager.nro",
+        "dest": "switch/SimpleModManager.nro"
+      }
+    ]
+  },
+  {
+    "name": "Simple Mod Downloader",
+    "description": "Mod downloading tool",
+    "checkPath": "switch/SimpleModDownloader.nro",
+    "steps": [
+      {
+        "type": "github_file",
+        "owner": "PoloNX",
+        "repo": "SimpleModDownloader",
+        "assetMatch": "SimpleModDownloader.nro",
+        "dest": "switch/SimpleModDownloader.nro"
+      }
+    ]
   }
 ]

@@ -1,0 +1,32 @@
+{
+  "id": "rcm",
+  "title": "Entering RCM",
+  "slides": [
+    {
+      "title": "What You Need",
+      "body": "To enter RCM you need:\n\n  1. An RCM jig - a small plastic clip that bridges pins 1 and 10 on the right Joy-Con rail. Available cheaply online.\n\n  2. A USB-C cable to connect your Switch to a PC.\n\n  3. A payload injector tool on your PC - TegraRcmGUI (Windows) is the easiest option.",
+      "buttons": [
+        { "label": "< Back", "action": "prev" },
+        { "label": "Next >", "action": "next" }
+      ]
+    },
+    {
+      "title": "Entering RCM",
+      "body": "Follow these steps carefully:\n\n  1. Power off your Switch completely.\n     (Hold Power -> Power Options -> Power Off)\n\n  2. Remove the right Joy-Con.\n\n  3. Insert the RCM jig into the right Joy-Con rail.\n\n  4. Hold Vol+ and press Power.\n\nThe screen will stay black - this is normal. Your Switch is now in RCM and waiting for a payload.",
+      "note": "If the Nintendo logo appears, you missed RCM. Power off completely and retry.",
+      "buttons": [
+        { "label": "< Back", "action": "prev" },
+        { "label": "Next >", "action": "next" }
+      ]
+    },
+    {
+      "title": "Injecting a Payload",
+      "body": "With your Switch in RCM and connected via USB-C:\n\n  1. Open TegraRcmGUI on your PC.\n  2. It should detect your Switch automatically (green indicator).\n  3. Click the folder icon and select hekate_ctcaer_X.X.X.bin from the Hekate release.\n  4. Click Inject Payload.\n\nHekate will boot and show its menu. From there you can launch Atmosphere, manage partitions, and more.\n\nFor future boots, you can use a dedicated RCM dongle instead of a PC.",
+      "note": "If hekate doesn't launch and the injected size is 0x0000 bytes instead of 0x7000 bytes, your console is patched.",
+      "buttons": [
+        { "label": "< Back", "action": "prev" },
+        { "label": "Done", "action": "close" }
+      ]
+    }
+  ]
+}

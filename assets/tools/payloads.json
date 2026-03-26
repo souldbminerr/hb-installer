@@ -1,0 +1,68 @@
+[
+  {
+    "name": "fusee",
+    "description": "Bootloader for Atmosphere.",
+    "checkPath": "bootloader/payloads/fusee.bin",
+    "steps": [
+      {
+        "type": "github_file",
+        "owner": "Atmosphere-NX",
+        "repo": "Atmosphere",
+        "assetMatch": "fusee.bin",
+        "dest": "bootloader/payloads/fusee.bin"
+      }
+    ]
+  },
+  {
+    "name": "Lockpick_RCM",
+    "description": "Dumps your Switch's encryption keys to your SD card.",
+    "checkPath": "bootloader/payloads/Lockpick_RCM.bin",
+    "steps": [
+      {
+        "type": "github_file",
+        "owner": "Kofysh",
+        "repo": "Lockpick_RCM",
+        "assetMatch": "Lockpick_RCM.bin",
+        "dest": "bootloader/payloads/Lockpick_RCM.bin"
+      }
+    ]
+  },
+  {
+    "name": "TegraExplorer",
+    "description": "File explorer and script runner payload.",
+    "checkPath": "bootloader/payloads/TegraExplorer.bin",
+    "steps": [
+      {
+        "type": "github_file",
+        "owner": "suchmememanyskill",
+        "repo": "TegraExplorer",
+        "assetMatch": "TegraExplorer.bin",
+        "dest": "bootloader/payloads/TegraExplorer.bin"
+      }
+    ]
+  },
+  {
+    "name": "μsk",
+    "description": "Switch modchip firmware for RP2040. Can be installed onto your modchip with Modchip Toolbox.",
+    "checkPath": "update.bin",
+    "steps": [
+      {
+        "type": "direct_file",
+        "url": "https://github.com/rehius/usk/releases/latest/download/update.bin",
+        "dest": "update.bin"
+      }
+    ]
+  },
+  {
+    "name": "Modchip Toolbox",
+    "description": "Toolbox for managing μsk-based modchips",
+    "checkPath": "bootloader/payloads/modchip_toolbox.bin",
+    "steps": [
+      {
+        "type": "direct_file",
+        "url": "https://github.com/DefenderOfHyrule/modchip-toolbox/releases/latest/download/modchip_toolbox.bin",
+        "dest": "bootloader/payloads/modchip_toolbox.bin"
+      }
+    ]
+  }
+]

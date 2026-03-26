@@ -1,0 +1,38 @@
+{
+  "id": "modchips",
+  "title": "Modchips",
+  "slides": [
+    {
+      "title": "What is a Modchip?",
+      "body": "A modchip is a small circuit board soldered onto your Switch's motherboard.\n\nThis allows patched consoles, Switch Lite, and Switch OLED - hardware that cannot use RCM - to run custom firmware like Atmosphere.\n\nThe best modchip is the Picofly.",
+      "buttons": [
+        { "label": "Next >", "action": "next" }
+      ]
+    },
+    {
+      "title": "Supported Hardware",
+      "body": "Modchips are available for every Switch model:\n\n  PicoFly:\n    - Original Switch (patched & unpatched)\n    - Switch Lite\n    - Switch OLED\n\nUnpatched consoles don't need a modchip, but using one delivers a better experience",
+      "buttons": [
+        { "label": "< Back", "action": "prev" },
+        { "label": "Next >", "action": "next" }
+      ]
+    },
+    {
+      "title": "Installation",
+      "body": "Installation requires soldering to tiny points on the motherboard.\n\nDifficulty varies by model:\n  - Original Switch: Low\n  - Switch Lite: Medium\n  - Switch OLED: High\n\nThe PicoFly both include installation guides and training mode LEDs that confirm correct installation.",
+      "note": "A single bad solder joint can permanently damage your console. If you're not confident, find a local repair shop experienced with microsoldering.",
+      "buttons": [
+        { "label": "< Back", "action": "prev" },
+        { "label": "Next >", "action": "next" }
+      ]
+    },
+    {
+      "title": "After Installation",
+      "body": "Once installed, a modchipped Switch will boot Hekate automatically on every power-on.\n  - Atmosphere and most homebrew work exactly the same.\n\nThe usk modchip firmware in the Essentials tab keeps your PicoFly firmware up to date directly from the Switch SD card.",
+      "buttons": [
+        { "label": "< Back", "action": "prev" },
+        { "label": "Done", "action": "return_to" }
+      ]
+    }
+  ]
+}

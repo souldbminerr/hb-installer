@@ -94,5 +94,33 @@
         "dest": "switch/.overlays/Fizeau.ovl"
       }
     ]
+  },
+  {
+    "name": "MissionControl",
+    "description": "Use many bluetooth controllers with your Switch!",
+    "checkPath": "atmosphere/contents/010000000000bd00",
+    "steps": [
+      {
+        "type": "github_zip",
+        "owner": "ndeadly",
+        "repo": "MissionControl",
+        "assetMatch": ".zip",
+        "extractTo": ""
+      }
+    ]
+  },
+  {
+    "name": "KeyX",
+    "description": "Button remapping, Macros and more!",
+    "checkPath": "atmosphere/contents/4100000002025924",
+    "steps": [
+      {
+        "type": "github_zip",
+        "owner": "TOM-BadEN",
+        "repo": "KeyX",
+        "assetMatch": "KeyX-EN.zip",
+        "extractTo": ""
+      }
+    ]
   }
 ]

@@ -18,8 +18,13 @@
       },
       {
         "type": "direct_file",
-        "url": "https://switch.hacks.guide/files/emu/hekate_ipl.ini",
+        "url": "https://raw.githubusercontent.com/souldbminerr/extras/refs/heads/main/hekate_ipl.ini",
         "dest": "bootloader/hekate_ipl.ini"
+      },
+      {
+        "type": "direct_file",
+        "url": "https://raw.githubusercontent.com/souldbminerr/extras/refs/heads/main/safemode.ini",
+        "dest": "bootloader/ini/safemode.ini"
       }
     ]
   },
@@ -40,6 +45,23 @@
         "type": "direct_file",
         "url": "https://switch.hacks.guide/files/emummc.txt",
         "dest": "atmosphere/hosts/emummc.txt"
+      },
+      {
+        "type": "direct_file",
+        "url": "https://raw.githubusercontent.com/souldbminerr/extras/refs/heads/main/system_settings.ini",
+        "dest": "atmosphere/config/system_settings.ini"
+      }
+    ]
+  },
+  {
+    "name": "Update Blocker",
+    "description": "Blocks system updates.",
+    "checkPath": "atmosphere/hosts/sysmmc.txt",
+    "steps": [
+      {
+        "type": "direct_file",
+        "url": "https://raw.githubusercontent.com/souldbminerr/tiny-switch-aio-pack/refs/heads/main/atmosphere/hosts/default.txt",
+        "dest": "atmosphere/hosts/sysmmc.txt"
       }
     ]
   }

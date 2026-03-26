@@ -191,8 +191,11 @@ inline int runSilent(const std::string& cmd)
 }
 
 // Run cmd silently and capture stdout+stderr, return output string.
+// Wraps in "cmd /C" so that shell pipes and redirections work.
 inline std::string runCapture(const std::string& cmd)
 {
+    // cmd /C interprets pipes, quotes, etc. — required for "curl ... | findstr ..."
+    const std::string wrapped = "cmd /C " + cmd;
     SECURITY_ATTRIBUTES sa = {};
     sa.nLength = sizeof(sa);
     sa.bInheritHandle = TRUE;
@@ -209,7 +212,7 @@ inline std::string runCapture(const std::string& cmd)
     si.hStdError  = hW;
     si.wShowWindow = SW_HIDE;
 
-    std::vector<char> buf(cmd.begin(), cmd.end());
+    std::vector<char> buf(wrapped.begin(), wrapped.end());
     buf.push_back('\0');
 
     if (!CreateProcessA(nullptr, buf.data(), nullptr, nullptr, TRUE,

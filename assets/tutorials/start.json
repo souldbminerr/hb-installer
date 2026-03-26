@@ -1,0 +1,102 @@
+{
+  "id": "start",
+  "title": "Setup Wizard",
+  "menu": false,
+  "slides": [
+    {
+      "title": "Welcome to hb-installer",
+      "body": "This tool installs Atmosphere CFW, Hekate, and homebrew apps onto your Nintendo Switch SD card.\n\nBefore you begin, let's confirm which installation method works for your console.\n\nIf you already have a modchip installed, you can skip straight to the installer.",
+      "buttons": [
+        { "label": "Check My Serial >", "action": "next" },
+        { "label": "Skip - I have a modchip", "action": "goto:5" },
+        { "label": "Skip Tutorial", "action": "close" }
+      ]
+    },
+    {
+      "title": "Check Your Serial Number",
+      "body": "Enter your Switch serial number below.\nYou can find it in the system settings under Console Information, or engraved on the bottom of your console.",
+      "inputPlaceholder": "e.g. XAW10012345678",
+      "buttons": [
+        { "label": "< Back", "action": "prev" },
+        { "label": "Check", "action": "check_serial" }
+      ]
+    },
+    {
+      "title": "Unpatched - RCM Works",
+      "body": "Your serial number matches an unpatched Switch.\n\nYou can use RCM (Recovery Mode) to run custom firmware without any hardware modification. All you need is an RCM jig and a USB-C cable.\n\nNext, plug in your SD card so we can install the essential files.",
+      "buttons": [
+        { "label": "< Back", "action": "goto:1" },
+        { "label": "Set up SD Card >", "action": "set_guide:rcm|goto:6" }
+      ]
+    },
+    {
+      "title": "Possibly Patched",
+      "body": "Your serial number falls in a borderline range. Some units with this prefix are unpatched and support RCM; others are patched and require a modchip.\n\nThe only way to know for certain is to try entering RCM. If the screen stays black after holding Vol+ and Power with an RCM jig, RCM works. If the Nintendo logo appears, your unit is patched.\n\nNext, plug in your SD card so we can install the essential files.",
+      "note": "Verify your exact serial at ismyswitchpatched.com for a more precise answer.",
+      "buttons": [
+        { "label": "< Back", "action": "goto:1" },
+        { "label": "Check Online", "action": "open_url:https://ismyswitchpatched.com" },
+        { "label": "Set up SD Card >", "action": "set_guide:rcm|goto:6" }
+      ]
+    },
+    {
+      "title": "Patched - Modchip Required",
+      "body": "Your serial number indicates a patched Switch, Switch Lite, Switch OLED, or a model not in the vulnerability table.\n\nThese consoles cannot use RCM. A modchip must be installed to run custom firmware.\n\nRead the modchip guide first, then we will set up the SD card.",
+      "note": "If you think this result is wrong, verify your exact serial at ismyswitchpatched.com",
+      "buttons": [
+        { "label": "< Back", "action": "goto:1" },
+        { "label": "Check Online", "action": "open_url:https://ismyswitchpatched.com" },
+        { "label": "Modchip Guide >", "action": "set_return:start:7|open_guide:modchips" }
+      ]
+    },
+    {
+      "title": "Modchip Installed",
+      "body": "A modchipped Switch uses the exact same software setup as an unpatched console.\n\nHekate boots automatically on every power-on - no PC or jig needed.\n\nRead the modchip guide first, then we will set up the SD card.",
+      "buttons": [
+        { "label": "< Back", "action": "goto:0" },
+        { "label": "Modchip Guide >", "action": "set_return:start:7|open_guide:modchips" }
+      ]
+    },
+    {
+      "title": "Set Up Your SD Card",
+      "body": "Insert your Nintendo Switch SD card into your PC, then select it from the dropdown below.\n\nIf the card is new or needs to be wiped, use Format to FAT32 first.\n\nThen click Install Essentials to write Hekate, Atmosphere, and the update blocker.",
+      "detectDrive": true,
+      "installTools": ["Hekate", "Atmosphere", "Update Blocker", "Lockpick_RCM", "TegraExplorer", "Homebrew App Store"],
+      "buttons": [
+        { "label": "Format to FAT32", "action": "goto:8" },
+        { "label": "Install", "action": "install_recommended" },
+        { "label": "Continue to Guide >", "action": "open_pending_guide" },
+        { "label": "Skip", "action": "close" }
+      ]
+    },
+    {
+      "title": "Set Up Your SD Card (Modchip)",
+      "body": "Insert your Nintendo Switch SD card into your PC, then select it from the dropdown below.\n\nIf the card is new or needs to be wiped, use Format to FAT32 first.\n\nThen click Install to write Hekate, Atmosphere, the update blocker, modchip firmware (uSK), and modchip utilities.",
+      "detectDrive": true,
+      "installTools": ["Hekate", "Atmosphere", "Update Blocker", "Lockpick_RCM", "TegraExplorer", "Homebrew App Store", "Modchip Toolbox", "μsk"],
+      "buttons": [
+        { "label": "Format to FAT32", "action": "goto:9" },
+        { "label": "Install", "action": "install_recommended" },
+        { "label": "Done", "action": "close" }
+      ]
+    },
+    {
+      "title": "FORMAT WARNING - ALL DATA WILL BE ERASED",
+      "body": "You are about to format the selected drive to FAT32.\n\nThis will permanently delete EVERYTHING on the drive, including:\n  - Any existing CFW files (Atmosphere, Hekate, saves)\n  - All homebrew and game data\n  - Any other files stored on the card\n\nThis action CANNOT be undone.\n\nMake sure you have selected the correct drive and have backed up anything important.",
+      "note": "Triple-check the drive letter in the dropdown on the previous screen. Formatting the wrong drive is unrecoverable.",
+      "buttons": [
+        { "label": "< Cancel - Go Back", "action": "goto:6" },
+        { "label": "I understand - Format Now", "action": "format_fat32|goto:6" }
+      ]
+    },
+    {
+      "title": "FORMAT WARNING - ALL DATA WILL BE ERASED",
+      "body": "You are about to format the selected drive to FAT32.\n\nThis will permanently delete EVERYTHING on the drive, including:\n  - Any existing CFW files (Atmosphere, Hekate, saves)\n  - All homebrew and game data\n  - Any other files stored on the card\n\nThis action CANNOT be undone.\n\nMake sure you have selected the correct drive and have backed up anything important.",
+      "note": "Triple-check the drive letter in the dropdown on the previous screen. Formatting the wrong drive is unrecoverable.",
+      "buttons": [
+        { "label": "< Cancel - Go Back", "action": "goto:7" },
+        { "label": "I understand - Format Now", "action": "format_fat32|goto:7" }
+      ]
+    }
+  ]
+}
