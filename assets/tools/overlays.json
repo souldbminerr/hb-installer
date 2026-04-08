@@ -1,13 +1,15 @@
 [
   {
     "name": "Ultrahand",
-    "description": "Feature-rich overlay menu. Recommended frontend for Horizon OC.",
+    "description": "Feature-rich overlay menu.",
     "checkPath": "switch/.overlays/ovlmenu.ovl",
     "steps": [
       {
-        "type": "direct_file",
-        "url": "https://github.com/ppkantorski/Ultrahand-Overlay/releases/latest/download/ovlmenu.ovl",
-        "dest": "switch/.overlays/ovlmenu.ovl"
+        "type": "github_zip",
+        "owner": "ppkantorski",
+        "repo": "Ultrahand-Overlay",
+        "assetMatch": "sdout.zip",
+        "extractTo": ""
       }
     ]
   },

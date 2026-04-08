@@ -32,20 +32,16 @@
     {
       "title": "Possibly Patched",
       "body": "Your serial number falls in a borderline range. Some units with this prefix are unpatched and support RCM; others are patched and require a modchip.\n\nThe only way to know for certain is to try entering RCM. If the screen stays black after holding Vol+ and Power with an RCM jig, RCM works. If the Nintendo logo appears, your unit is patched.\n\nNext, plug in your SD card so we can install the essential files.",
-      "note": "Verify your exact serial at ismyswitchpatched.com for a more precise answer.",
       "buttons": [
         { "label": "< Back", "action": "goto:1" },
-        { "label": "Check Online", "action": "open_url:https://ismyswitchpatched.com" },
         { "label": "Set up SD Card >", "action": "set_guide:rcm|goto:6" }
       ]
     },
     {
       "title": "Patched - Modchip Required",
       "body": "Your serial number indicates a patched Switch, Switch Lite, Switch OLED, or a model not in the vulnerability table.\n\nThese consoles cannot use RCM. A modchip must be installed to run custom firmware.\n\nRead the modchip guide first, then we will set up the SD card.",
-      "note": "If you think this result is wrong, verify your exact serial at ismyswitchpatched.com",
       "buttons": [
         { "label": "< Back", "action": "goto:1" },
-        { "label": "Check Online", "action": "open_url:https://ismyswitchpatched.com" },
         { "label": "Modchip Guide >", "action": "set_return:start:7|open_guide:modchips" }
       ]
     },

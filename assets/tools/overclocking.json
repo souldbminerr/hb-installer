@@ -1,7 +1,7 @@
 [
   {
     "name": "Horizon OC",
-    "description": "CPU, GPU, and memory overclocking suite. Adds boot entries to hekate_ipl.ini.",
+    "description": "CPU, GPU, and memory overclocking suite.",
     "checkPath": "atmosphere/kips/hoc.kip",
     "steps": [
       {

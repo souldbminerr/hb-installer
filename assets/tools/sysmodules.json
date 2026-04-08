@@ -1,19 +1,5 @@
 [
   {
-    "name": "nx-ovlloader",
-    "description": "Background sysmodule that loads Tesla/Ultrahand overlays via combo button.",
-    "checkPath": "atmosphere/contents/420000000007E51A",
-    "steps": [
-      {
-        "type": "github_zip",
-        "owner": "ppkantorski",
-        "repo": "nx-ovlloader",
-        "assetMatch": ".zip",
-        "extractTo": ""
-      }
-    ]
-  },
-  {
     "name": "sys-patch",
     "description": "Patches nifm, es, ldr and more.",
     "checkPath": "atmosphere/contents/420000000000000B",
@@ -119,6 +105,20 @@
         "owner": "TOM-BadEN",
         "repo": "KeyX",
         "assetMatch": "KeyX-EN.zip",
+        "extractTo": ""
+      }
+    ]
+  },
+  {
+    "name": "sys-ticon",
+    "description": "Replace icons on your home menu",
+    "checkPath": "atmosphere/contents/00FF747765616BFF",
+    "steps": [
+      {
+        "type": "github_zip",
+        "owner": "masagrator",
+        "repo": "sys-ticon",
+        "assetMatch": "sys-ticon.zip",
         "extractTo": ""
       }
     ]
